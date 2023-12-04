@@ -25,6 +25,12 @@ nav {
   color: var(--white-shade);
   transform: scaleY(1);
   transition: transform 0.5s;
+  position: sticky;
+  top: 0;
+}
+
+nav > .home {
+  font-weight: 1000;
 }
 
 .members {
