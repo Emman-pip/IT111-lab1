@@ -47,12 +47,14 @@ const burger = () => {
         members[i].textContent = memberName;
         nav.append(members[i]);
         nav.style = "gap:1rem;";
+        nav.classList.add("addHeight");
       }
       return;
     }
     for (let i = 0; i < members.length; i++) {
       nav.removeChild(members[i]);
       nav.style = "gap:0;";
+      nav.classList.remove("addHeight");
     }
   };
 };

@@ -23,6 +23,8 @@ nav {
   background-color: var(--main-color);
   min-height: 5vh;
   color: var(--white-shade);
+  transform: scaleY(1);
+  transition: transform 0.5s;
 }
 
 .members {
@@ -178,6 +180,12 @@ h1 {
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.446);
   height: auto;
   transition: width 1s;
+}
+
+.addHeight {
+  /* transition: transform 2s; */
+  transform: scaleY(1.1);
+  transform: scaleX(1.01);
 }
 
 @media (width < 580px) {
