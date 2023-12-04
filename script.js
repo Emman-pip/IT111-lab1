@@ -5,7 +5,11 @@ const slowScroll = (element, target) => {
     const xvalue = "center";
     const scrollFactor = 0.3;
     const yValue = scrolltoTop * scrollFactor;
-    target.style.backgroundPosition = xvalue + " " + yValue + "px";
+    try {
+      target.style.backgroundPosition = xvalue + " " + yValue + "px";
+    } catch (err) {
+      null;
+    }
   };
 };
 
