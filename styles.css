@@ -16,6 +16,7 @@ a {
   color: var(--white-shade);
 }
 nav {
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
